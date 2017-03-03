@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
+showInfo=false;
+users=['max','Anna','Chris'];
+color='green';
   constructor() { }
 
   ngOnInit() {
