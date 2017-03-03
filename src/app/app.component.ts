@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  age   = 27;
+  person={
+    name:'MAX',
+     age:27
+  }
+ getName(){
+   return 'MAX';
+ }
+  setAge(age:number){
+    this.age=age;
+  }
 }
