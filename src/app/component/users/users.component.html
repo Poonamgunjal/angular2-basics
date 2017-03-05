@@ -3,6 +3,7 @@
 </p>
 
 <button (click)="showInfo=true">Show Info</button>
+<button (click)="onShowAlert()">Show Alert</button>
 <p *ngIf="showInfo">Some extra user information!</p>
 <p *ngFor="let user of users">{{user}}</p>
 <p [ngStyle]="{'background-color':color}">This is a green</p>

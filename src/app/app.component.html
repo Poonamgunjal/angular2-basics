@@ -14,4 +14,12 @@
 <input type="text" [(ngModel)]="person.name"/>
 
 <hr>
-<app-users></app-users>
+<!--
+<p *ngFor="let user of registeredUsers">{{user}}</p>
+-->
+<p *ngFor="let user of users">{{user}}</p>
+hr
+<!--
+<app-users [users]="registeredUsers" (alertThrown)="onChildAlert($event)"></app-users>
+-->
+<app-users (alertThrown)="onChildAlert($event)"></app-users>
