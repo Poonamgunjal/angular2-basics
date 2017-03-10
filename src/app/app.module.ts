@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './component/users/users.component';
 import { UsersService } from './component/users/users.service';
+import { CommunicatorComponent } from './component/communicator/communicator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    CommunicatorComponent
   ],
   imports: [
     BrowserModule,

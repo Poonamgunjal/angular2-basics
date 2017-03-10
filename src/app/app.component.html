@@ -23,3 +23,5 @@ hr
 <app-users [users]="registeredUsers" (alertThrown)="onChildAlert($event)"></app-users>
 -->
 <app-users (alertThrown)="onChildAlert($event)"></app-users>
+<app-users  [userData]='childData' (info)='childInfo($event)'></app-users>
+<app-communicator [passData]='childData' (communicate)='child2Info($event)'></app-communicator>

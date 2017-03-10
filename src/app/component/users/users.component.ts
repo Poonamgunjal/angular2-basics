@@ -9,10 +9,21 @@ import { UsersService } from './users.service';
 })
 export class UsersComponent implements OnInit {
 
+value='Enter a info';
 showInfo=false;
 //users=['max','Anna','Chris'];
 //@Input() users: any;
+
+@Input() userData:string;
+
+//this.value=this.userData;
+
 @Output() alertThrown = new EventEmitter<string>();
+@Output() info = new EventEmitter<string>();
+
+  onClick() {
+    this.info.emit(this.userData);
+  }
 color='green';
    users: any[];
 

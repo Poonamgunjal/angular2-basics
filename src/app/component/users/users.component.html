@@ -7,3 +7,7 @@
 <p *ngIf="showInfo">Some extra user information!</p>
 <p *ngFor="let user of users">{{user}}</p>
 <p [ngStyle]="{'background-color':color}">This is a green</p>
+
+<hr>
+<p>Add a information to communicate with communicator!</p>
+<input type="text" [(ngModel)]="userData" (keyup)="onClick()"/>
